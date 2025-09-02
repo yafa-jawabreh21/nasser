@@ -1,0 +1,18 @@
+runtime: python311
+entrypoint: gunicorn -w 2 -k uvicorn.workers.UvicornWorker backend.app:app
+
+handlers:
+- url: /api/.*
+  script: auto
+  secure: always
+
+- url: /.*
+  script: auto
+  secure: always
+
+env_variables:
+  APP_NAME: "Harmah Fusion Enterprise"
+  SECRET_KEY: "change_me_now_to_random_long_string"
+  JWT_ALG: "HS256"
+  ACCESS_TOKEN_EXPIRE_MINUTES: "240"
+  ALLOWED_ORIGINS: "https://*.netlify.app,https://*.appspot.com,https://*.superior-overseas.com"

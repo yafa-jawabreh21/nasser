@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harmah Fusion Enterprise — Superior Overseas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Harmah Fusion — Enterprise</div>
+    <nav class="nav">
+      <a href="#" data-tab="login">دخول</a>
+      <a href="#" data-tab="projects">مشاريع</a>
+      <a href="#" data-tab="pmo">PMO</a>
+      <a href="#" data-tab="evm">EVM</a>
+      <a href="#" data-tab="proc">مشتريات</a>
+      <a href="#" data-tab="vision">Vision</a>
+      <a href="#" data-tab="ifrs">IFRS15</a>
+      <!-- <a href="#" data-tab="edu">التعليم</a>
+      <a href="#" data-tab="report">تقرير</a>
+      <a href="#" data-tab="admin">Admin</a> -->
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="tab-login" class="card">
+      <h2>تسجيل الدخول</h2>
+      <label>البريد</label>
+      <input id="email" value="admin@superior-overseas.com">
+      <label>كلمة المرور</label>
+      <input id="password" type="password" value="Admin123!">
+      <button id="btn-login">دخول</button>
+      <div id="login-status"></div>
+    </section>
+
+    <section id="tab-projects" class="card hidden">
+      <h2>المشاريع</h2>
+      <button id="btn-load-projects">تحميل</button>
+      <div id="projects-out" class="data-container"></div>
+    </section>
+
+    <section id="tab-pmo" class="card hidden">
+      <h2>PMO</h2>
+      <div class="grid2">
+        <div>
+          <button id="btn-pmo-portfolio">ملخص Portfolio</button>
+          <div id="pmo-portfolio" class="data-container"></div>
+        </div>
+        <div>
+          <button id="btn-pmo-kpis">KPIs</button>
+          <div id="pmo-kpis" class="data-container"></div>
+        </div>
+      </div>
+      <button id="btn-pmo-risks">Risk Register (50)</button>
+      <div id="pmo-risks" class="data-container"></div>
+      <button id="btn-pmo-timeline">Timeline (200)</button>
+      <div id="pmo-timeline" class="data-container"></div>
+    </section>
+
+    <section id="tab-evm" class="card hidden">
+      <h2>EVM</h2>
+      <button id="btn-evm-run">تشغيل على عينات</button>
+      <div id="evm-out" class="data-container"></div>
+    </section>
+
+    <section id="tab-proc" class="card hidden">
+      <h2>Trigger المشتريات (15 يوم)</h2>
+      <button id="btn-proc-run">تشغيل عينة</button>
+      <div id="proc-out" class="data-container"></div>
+    </section>
+
+    <section id="tab-vision" class="card hidden">
+      <h2>Vision Monitor</h2>
+      <button id="btn-vision">تحميل الحالة</button>
+      <div id="vision-out" class="data-container"></div>
+    </section>
+
+    <section id="tab-ifrs" class="card hidden">
+      <h2>IFRS15 (مبسّط)</h2>
+      <button id="btn-ifrs">جدول إيراد لعناصر عينة</button>
+      <div id="ifrs-out" class="data-container"></div>
+    </section>
+
+    <section id="tab-edu" class="card hidden">
+      <h2>التعليم</h2>
+      <div class="grid2">
+        <div>
+          <button id="btn-edu-courses">دورات</button>
+          <div id="edu-courses" class="data-container"></div>
+        </div>
+        <div>
+          <button id="btn-edu-students">طلاب</button>
+          <div id="edu-students" class="data-container"></div>
+        </div>
+      </div>
+      <button id="btn-edu-enroll">Enrollments (100)</button>
+      <div id="edu-enroll" class="data-container"></div>
+      <button id="btn-edu-att">Attendance (100)</button>
+      <div id="edu-att" class="data-container"></div>
+    </section>
+
+    <!-- <section id="tab-report" class="card hidden">
+      <h2>تقرير HTML</h2>
+      <button id="btn-report">فتح التقرير</button>
+    </section> -->
+
+    <!-- <section id="tab-admin" class="card hidden">
+      <h2>إدارة البيانات (Admin)</h2>
+      <p>بعد توليد CSV من التبويب seeds شغّل:</p>
+      <button id="btn-seed-load">تحميل البذور إلى الذاكرة</button>
+      <button id="btn-seed-clear">مسح الذاكرة</button>
+      <div id="seed-out" class="data-container"></div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    © 2025 Superior Overseas — Nasser Jawabreh
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
